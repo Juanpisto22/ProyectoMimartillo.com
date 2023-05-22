@@ -1,0 +1,516 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+<head>
+    {% include 'base.html' %} 
+    <meta charset="UTF-8">
+    <title>D#</title>
+
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'css\estilosb.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css\blog.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css\busqueda.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css\articulos.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css\principal.css' %}">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="{% static 'js\script.js' %}"></script>
+
+</head>
+<body>
+
+    <!--Header - menu-->
+    <header>
+
+        
+
+          
+        </div>
+
+        <div id="icon-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+    </header>
+
+
+    <!-- <div id="ctn-bars-search">
+        <input type="text" id="inputSearch" placeholder="¿Qué deseas buscar?">
+    </div> -->
+
+    <ul id="box-search">
+        <li><a href="#"><i class="fas fa-search"></i>H.Manuales</a></li>
+        <li><a href="#"><i class="fas fa-search"></i>H.Mecanicas</a></li>
+        <li><a href="#"><i class="fas fa-search"></i>H.de montaje</a></li>
+        <li><a href="#"><i class="fas fa-search"></i>H.de golpe </a></li>
+        <li><a href="#"><i class="fas fa-search"></i>H.de union y medicion </a></li>
+        <li><a href="#"><i class="fas fa-search"></i>H.de corte</a></li>
+        <li><a href="#"><i class="fas fa-search"></i>Como hacer</a></li>
+        <li><a href="#"><i class="fas fa-search"></i>Como crear</a></li>
+    </ul>
+
+    <div id="cover-ctn-search"></div>
+
+
+    <!--Portada-->
+
+    <div class="container-all" id="move-content">
+
+    
+    <div class="blog-container-cover">
+        <div class="container-info-cover">
+            <h1>Encuentra los manuales para todas las herramientas que compras</h1>
+            <p>En tu martillo nuestra prioridad es la saticfacion de nuestro clientes por eso pensamos en todo por ti </p>
+        </div>
+    </div>
+
+    <div class="container">
+		<input type="text" placeholder="Buscar" id="inputSearch">
+		<div class="btn">
+			<i class="fa fa-search"></i>
+		</div>
+	</div>
+
+    <div class="container-post">
+
+        <input type="radio" id="TODOS" name="categories" value="TODOS" checked>
+        <input type="radio" id="HTML" name="categories" value="HTML">
+        <input type="radio" id="CSS" name="categories" value="CSS">
+        <input type="radio" id="JS" name="categories" value="JS">
+        <input type="radio" id="PHP" name="categories" value="PHP">
+        <input type="radio" id="NODEJS" name="categories" value="NODEJS">
+        <input type="radio" id="VUE" name="categories" value="VUE">
+        
+
+        <div class="container-category">
+            <label for="TODOS">TODOS</label>
+            <label for="HTML">H.Manuales</label>
+            <label for="CSS">H.Mecanicas</label>
+            <label for="JS">H.de montaje</label>
+            <label for="PHP">H.de golpe</label>
+            <label for="NODEJS">H.de union y medicion</label>
+            <label for="VUE">H.de trazo</label>
+        </div>
+
+        <div class="posts">
+
+            <div class="post" data-category="CSS">
+
+                <div class="ctn-img">
+                    <img src="https://upick-co.s3.amazonaws.com/uploads/product/photo/38630/5036.png" alt="Imgt">
+                </div>
+                <h2>Como Utilizar un taladro inalambrico</h2>
+                <span></span>
+                <ul class="ctn-tag">
+                    <li>Mecanica</li>
+                    <li>Taladro</li>
+                </ul>
+                <a href="https://www.youtube.com/watch?v=WbxsuyZfSu0&ab_channel=BarquitodeVapor"><button>Ver Video</button></a>
+
+            </div>
+
+            <div class="post" data-category="HTML">
+
+                <div class="ctn-img">
+                    <img src="https://cdn10.totalcode.net/metropolis/product-zoom/es/broca-muro-5~16-irwin-1.webp" alt="imgb">
+                </div>
+                <h2>Como utilizar un Broca</h2>
+                <span>Mejores formas de uso</span>
+                <ul class="ctn-tag">
+                    <li>Manual</li>
+                </ul>
+                <a href="https://como-funciona.org/brocas/"><button>Ver Informacion</button></a>
+                
+
+            </div>
+
+            <div class="post" data-category="JS">
+
+                <div class="ctn-img">
+                    <img src="https://dewaltcenter.co/16931-large_default/alicates-de-electricista.jpg" alt="Imgal">
+                </div>
+                <h2>Como utilizar un Alicate</h2>
+                <span>Mejores formas de uso</span>
+                <ul class="ctn-tag">
+                    <li>Manual</li>
+                </ul>
+                <a href="https://www.youtube.com/watch?v=z1_ikmCYK3A&ab_channel=Ferretotal"><button>Ver Video</button></a>
+
+            </div>
+
+            <div class="post" data-category="JS NODEJS VUE">
+
+                <div class="ctn-img">
+                    <img src="https://i0.wp.com/pinturasyyesos.com/wp-content/uploads/2021/02/flexometro-stanley-8m.jpg?fit=800%2C800&ssl=1" alt="Imgfle">
+                </div>
+                <h2>Como Utilizar un Flexometro</h2>
+                <span>Mejores formas de uso</span>
+                <ul class="ctn-tag">
+                    <li>Manual</li>
+                    <li>Medicion</li>
+                    
+                </ul>
+                <a href="https://www.youtube.com/watch?v=vUqJ87oQPA0&ab_channel=TecnicaX"><button>Ver Video</button></a>
+
+            </div>
+
+            <div class="post" data-category="CSS">
+
+                <div class="ctn-img">
+                    <img src="https://www.atrial.com.co/wp-content/uploads/2021/06/gato-hidraulico-de-patin-2-ton-5ad.jpg" alt="Imggto">
+                </div>
+                <h2>Como Utilizar un Gato Hidraulico</h2>
+                <span>Mejores formas de uso</span>
+                <ul class="ctn-tag">
+                    <li>Mecanica</li>
+                </ul>
+                <a href="https://www.youtube.com/watch?v=31_2PB4oMyM&ab_channel=Kuoyifu"><button>Ver Video</button></a>
+
+            </div>
+
+            <div class="post" data-category="PHP">
+
+                <div class="ctn-img">
+                    <img src="https://belltec.com.co/2060-large_default/martillo-con-mango-de-madera-cabeza-conica-stanley-51271.jpg" alt="Imgmar">
+                </div>
+                <h2>Como Utilizar un Martillo</h2>
+                <span>Mejores formas de uso</span>
+                <ul class="ctn-tag">
+                    <li>Manual</li>
+                </ul>
+                <a href="https://www.youtube.com/watch?v=Q5lS9H-7UYs&ab_channel=SantaMisaCosmovision"><button>Ver Video</button></a>
+
+            </div>
+
+            <div class="post" data-category="HTML NODEJS">
+
+                <div class="ctn-img">
+                    <img src="https://media.istockphoto.com/id/657404306/es/foto/nivel-de-agua-de-construcci%C3%B3n-amarillo-aislado-en-blanco.jpg?s=612x612&w=0&k=20&c=ppcQXZl9DNjON_HyEQaxNTmXfqahE3Sax5gullVooc4=" alt="Imgni">
+                </div>
+                <h2>Como Utilizar un Nivel</h2>
+                <span>Mejores formas de uso</span>
+                <ul class="ctn-tag">
+                    <li>Manual</li>
+                    <li>Medicion</li>
+                </ul>
+                <a href="https://www.youtube.com/watch?v=C5utW1RHruc&ab_channel=Comosehace"><button>Ver Video</button></a>
+
+            </div>
+            <div class="post" data-category="VUE">
+
+                <div class="ctn-img">
+                    <img src="https://ar.stanleytools.global/LAG/PRODUCT/IMAGES/HIRES/20-112/20-112_4.jpg?resize=530x530" alt="Imging">
+                </div>
+                <h2>Como Utilizar una caja de ingletes</h2>
+                <span>Mejores formas de uso</span>
+                <ul class="ctn-tag">
+                    <li>Manual</li>
+                    <li>Trazo</li>
+                </ul>
+                <a href="https://www.youtube.com/watch?v=NQk2fzbrW20&ab_channel=ElAprendizdeCarpintero"><button>Ver Video</button></a>
+
+
+            </div>
+            <div class="post" data-category="JS">
+
+                <div class="ctn-img">
+                    <img src="https://inversionesproin.com/wp-content/uploads/2020/07/60004.jpeg" alt="imgdest">
+                </div>
+                <h2>Como Utilizar un destornillador</h2>
+                <span>Mejores formas de uso</span>
+                <ul class="ctn-tag">
+                    <li>Manual</li>
+                    <li>Montaje</li>
+                </ul>
+                <a href="https://www.youtube.com/watch?v=xR70UR0eJX4&ab_channel=Ferretotal"><button>Ver Video</button></a>
+
+            </div>
+            <div class="post" data-category="CSS">
+
+                <div class="ctn-img">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_889595-MCO49489166373_032022-O.jpg" alt="imgcom">
+                </div>
+                <h2>Como Utilizar un compresor de aire</h2>
+                <span>Mejores formas de uso</span>
+                <ul class="ctn-tag">
+                    <li>Mecanico</li>
+                </ul>
+                <a href="https://www.youtube.com/watch?v=J7aym9BhYqk&ab_channel=CustomsMaker"><button>Ver Video</button></a>
+
+            </div>
+
+            <div class="post" data-category="NODEJS">
+
+                <div class="ctn-img">
+                    <img src="https://como-funciona.co/wp-content/uploads/2018/09/Goni%C3%B3metro.jpg" alt="Imggoni">
+                </div>
+                <h2>Como Utilizar un Goniometro</h2>
+                <span>Mejores formas de uso</span>
+                <ul class="ctn-tag">
+                    <li>Manual</li>
+                    <li>Medicion</li>
+                </ul>
+                <a href="https://www.youtube.com/watch?v=YqRwCVSggdE&ab_channel=ProfesorJuanCCastillo"><button>Ver Video</button></a>
+
+            </div>
+
+            <div class="post" data-category="PHP">
+
+                <div class="ctn-img">
+                    <img src="data:image/jpeg;base64,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" alt="ImgMazo">
+                    
+                </div>
+                <h2>Como Utilizar un Mazo</h2>
+                <span>Mejores formas de uso</span>
+                <ul class="ctn-tag">
+                    <li>Manual</li>
+                    <li>Golpeo</li>
+                </ul>
+                <a href="https://www.youtube.com/watch?v=0xDSQIECzLM&ab_channel=Ferretotal"><button>Ver Video</button></a>
+
+            </div>
+
+            <div class="post" data-category="JS">
+
+                <div class="ctn-img">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_619301-MCO40593149959_012020-O.jpg" alt="Imgcin">
+                </div>
+                <h2>Como Utilizar un Cincel</h2>
+                <span>Mejores formas de uso</span>
+                <ul class="ctn-tag">
+                    <li>Manual</li>
+                    <li>Montaje</li>
+                </ul>
+                <a href="https://www.youtube.com/watch?v=NWEFFj-Q1wQ&ab_channel=PepeMultiservicios"><button>Ver Video</button></a>
+
+            </div>
+
+            <div class="post" data-category="HTML">
+
+                <div class="ctn-img">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoGBxQUExYUFBQXFxYWGhgZGRkYGSAfGRkfIBkcGSAcIBkZICoiHxwnHx8YIzQnJysuMTExHCE2OzYwOiowMS4BCwsLDw4PHRERHS4nIScwMDAwMDAxMDAwMDEwMDAwMDAwMDAwMDAwMDAwMDAzMDAwMDAwMDAxMDAwMDAyMDUwMP/AABEIAKgBLAMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAFBgMEAAIHAQj/xABOEAABAwIDBAYFCQYEAwYHAAABAgMRAAQSITEFBkFREyJhcYGRBzKhsdEUI0JSU5LB0vAWM2JyguEVk6KyF0PxJFRjw9PjRGRzdIOjwv/EABoBAAMBAQEBAAAAAAAAAAAAAAABAgMEBQb/xAAtEQACAgEDBAEDAwQDAAAAAAAAAQIRAxIhMQQTQVEUImFxgZGxQtHh8AUyof/aAAwDAQACEQMRAD8ATFDCwOayT4cR/pSfGhyqI7XMFKB9EAfgD4pCD40OihDYQZThaT/ESrw9Ue41s8eHKmzd8pZs33g004tpbKPnE4gAcOIdmZND997FtJYuGU4EXLePB9VWUx2GR7a93p86Ulhaqtr9urPIm7k5exfRrV9mrG6Wx0vuLU6opYYQXHSNY4JHaYPkeMUetL6wdWGjalpCjhS4HCVpJyBI017T410vqVGTjGLlW7rwc81fkBJrYVZ2pYFh5bSsygxPMag+IIpjf+TsNMJXbhxp1sKU8PXxHUJPAjWJHsNdGTrIwjFxi3q4quDBQu78CqRXkVbYtQ4+ltsnCteFJVrBORIHGM6L3+1GWVqZbtmVNoOAqcErWRkTi4Zz+sqrJ1DjJRjFttXWypfcFHyxeBNZNbOKBJIEAkwJmBOk8Ypl3Y2c10Q6YDFdFTbU/RCUk4hy6wA8BR1PURwQ1yT/AAufuEY6nSFivK2W2UkpVkUkgjkQYI86ZbvaqGEsN/JmXEqYZWoqSMRKgZz55e2lm6hw06I6m78+gir5Ys15iopvHs5DS0razZeTjb7AdU+EjzqfZ1kw0wLi4SXMZKWmwYxRqokcP1nNL5UO2siTd7Jeb9D0u6AkVlMLTDF0hYZa6F9tJWlIUVJcA1Geh08x20uzV4c6yXFpprlP78Cao1mvYryiGwLDp30Nn1fWWeSRmfh4itcs1jg5PhK2TFW6KAJ51mI86O73NNqLVwykBt5JyAgBSDByGhiPI0BIrPp8qzQU6q+V5TRUlpdHgrxVexTNtzd9AtmnmfWS22p1MySFD95HeD2R3Us3UwxTjGXl0v8AIRg2nQuF0xHD/p8BUZNMW5mw0PrUt0fNohMTGJZ0EjkPeKA3LWBakfVUpPkSKWPqITyyxR5VX+o2nSbNAqvZpp3V2az0PzwBVdFTbUj1QlJOIcusI8E0ruIKSUqEFJII5EGD7anF1McmSUIr/r/74dA4tJMyRWrisqZDuyly1ada/fFKlqROa0hUEpHMSnTWedUbK0SbK4cKRjStoJVxAkSB3zUR63FKLcfDSa823X7D0NfyLjgzq8yqUpPLLy/tV3YWyWnA6/cEhhgAqCfWWo5JQO/8R30S2TdWVwroPk/Q48kLS4VEK0Eg8/H8azl1axzaUW0uWq2NJRuJz3a7OB1Q5mR45++aqhVHt8LBTa4V6yFFCvDQ93HxoDXhdXBRyvTw91+Huez009eNN/7RO2upA5VdNSiuU3JukrMXbUNe0AWNoK66o0BgdwyHsArzZzYU6gHSZPcOsr2A1EsyaubHZJLhGqUf7lJTPkSPEVtgjqyRj9zLLLTBv7DrujtBLVnduuNh0JW0ooVEKxEDiCNc9OFV9+mzctovWVlbEBBQRBYPIgcCY8YzIIoAtTgQpCceBcYgJwqgyJ4GDWjTz6ELQgrShwALSJhUcxXrLo2szzRf1N/pVU/1PKulQa3FSHG7u3Bhx9tJbnLEUFRKZ7ZHhNRbN2M+44Gw0sGQDKSAnPMknShdilaFBQxJUDIIkEHsNHnN4rpacKnlxxgAHzSAa6u1mjKTxVUqu/DqrRjNp8k++DyXLteEggYUTwkCDn2HLwojsO3uG3PkrzSlsrMEEEpHHGlYyAnP4GldKaJNbbuAjow8sJiInhyB1HnVZeln2Y4oU0lW/KftMzTWq2eMFLF0DMpad15pConviru1tgPKuFdGgrQ6orQseoQo4vW0ETxoLFWGL91KChLiwkz1Qox5VpkxZFJThJaqp3w/uJNVTRqmxUp0MiCorwSMxMxIPEcaYr/bzDbiWwwHE28IbXjIIKYkiAfpDxilptakkFMgjQjIjuIrTAeR8qWbpY5mnkdpLhOt3yxxbjwE97Gkl5LyPUuEJdHYSIUO+cz31b2tsp15u1U02pf/AGdCSRoMPAk5DWgeFZiQogZAZwOOXLOrLd7cJR0aVuhI+iCoD2Vm8GSMYKElcbW/rwO027XJf3nR0bNuwoguNJUVwZw4iCEz+tK9u2C/ZMKbBUWCtDiQJIkyFQOGnn2UGNuufUV901PYvvsqKmitBORgHPvBEGl8ZwhFQknKLb34bfP8hdt7BXc21U04q4cSUNNoXKlCJJiAJ1/6UtpGQontC/uHhDqlqA4YYT3wABVL5OofRV5GtunjKM5ZMjVypUuElwElskkQlNMGxLhFtbqfWgLU+S0lBMSgeuZjScvAUCLSvqnyNYvGQAcRCdAZgSZy5Z1r1GJZ4qDe17/dLwTG4uxiXetXNq8020GSyOnSkLxAgGFxIEZHTmRSvNbpxCYkSCDEiQdR3GvMFLp8EcGpRf0t2k3dexSblVnk02u7SDS7Nas212yG3BwKTkfI5+BpSit1OkgAkkJEJBOgkmB2STU9T08c7jfCu/1Q4txHG5CLd+0tWj1Q50izxJUohM9wn/TS3tG0Uu7caTqp5aR4rIqom4UFBeI4gQQomSCIjM8oFYblWMuYzjJKsQMGTqZHGsMHSPC71W6abflvyVJ6vA0bQ28y24lsW4cTbwhtfSFJBTEkQPrDxihW9zKS8l5GSLhCXR2E5KHfIk9poSFDmPOsU7MAqkDQTpnOXLOnh6KGGanBvZNO3d3/AJCTbVMO7cvFtfIujVhU3btqBHNWveDGlE766ae2e+62kJWtTZdSOC8SQSOwjPt75pPdfKoxKmAEiToBoO4VqHSAQFQDEjFkYzzE51Eugi1D6qknd+1d0x6nvtyGtiM9PZ3Nuj96Sh1KeKwnDIHbl7RVDdbZL6rluGlgJWkrKkkBIBkySNY4VTauFIUFtrwqTmClUEVPe7x3bqShdwSk5EApTPeUwTU5cOWM5dtqpb78p1TLg047k2+mF925KMwVSk8ykASOwke2kenK2VOcAyIIB7OzzpRu0ALUBoFEe2uP/ksUYwhXhV+yO7oJP6ov8kaalBqKtk15B6JKP1+vKtgKy2ZUtQQhJUpRgJGpPYK6Bsz0YktgvulDhzKUgEJ7JI17sqiUlHkqMJPg56VUUt3fk6Sf+atGEkmAhJgkRxJhOunLjVC2YxrSngSJ7Bx9k0QsLf5VtFllQlCnMbgjIpTLik9xSkjxr0OmUYRlkkrrZfk5MrcmoLzz+AxsXdG4uQHXnlNoUAUzKnFDgQmRhBGhJ8KNDcJgav3H3kD/APime6egFRoJeXstlaxCUpK44xEyeOkQPxrOfV5Lu6Kjhj6Bq9z7UGDcvzyDiD7m6mt9xLdwEouLhUZmFoMd/wA3Q/ZO9TVwpaBKC31oUBBTIBMjIQSBHbV/ZO3mbnF0ZONvUmUqHCdchOUzrWfzMq8srsw9Gx9HzH29x95H/p1Xe3ItU+tdPDvWifLo5q1f7zPFS2lJCVIhPSx+8BHrAaBQnPtExnFAX71cKLcrcAJCRJUc8zhHWOXDsqn1eXxJgsMPKRfa3NtFGBdPSdJUge9urKvR4yDBeuAe0o/JSlu7tq4dJ6RJLcSFgQJmIzyMgEeFNltvItpISUlxJIATPWSSYBB+rnmPERGa+Xlum2Hah6NHdwbdIk3D4HapEf7KgVudaf8Ae3vNPvwRVTeTb6kAurE5wkDJI5a+8yTzqLZm9KVsKeVkUnCU65wIjQacaT6rL4Y+1D0GGvR8wpOJNw+pPMKQR54Kw+jxj7d/zR+Sqe7u8hdlbJKFJICkkCDylIyI17eUHOmnZF8bhpTqm+jSFKTgzViwEhWeUpkEAZTx4U/l5K3bF2Y+kLydwrb/ALw/4Qf9rZr1vcC2UYFw8TylIPkUA1Fsrf1h9xxKmijChSm+v6+HPD1U9Uk9pqfcTet69eWh1hPRhKlJcSlQSmIhKiokYjI0g0vl5fbH2Yekbf8ADhj7Z/zR+Stf+HLH27/mj8lNzS5lKpJjElR1KcgQeZBKczmQc8wSfMYmJA7yB76pdTkf9TJ7UV4FE+jpj7Z/zR+StHPR9bpEqfeA5ko/JTbduhCCo6AEnu1pdut5mmUpcfMqVGH+GYMAHJMCJOpOvAAl1OReWCxRfgHDcq043Lw7TEeYbqdv0fWyhKbh5Q5hSCPYmhu+e8Fyl+2RbkKS+hCkDClRcKlFOHrAxwGUa68mJl5OKGnEJfSkdKlCgopV9IFM5pByzHkYqflZfLK7UPRQHo5Y+2fPij8lU1bnWYOH5S+SNQnCqPutmrO0d4HXVLZKOjCDhcCSfnDAIAVqEQQY4lQB9WlXbm3rxh5K2l4Gh6gQBhOUkKBB62uvhVfJyew7UfQ0s7g2qshcPE/VxICh/SW5qX/hzbfa3H3m/wD06g2t6Q0tFpLjQuAcyCspwA8RIPWzJmZmc6MP7YcWq1DSFqavCMDhgPNAGVoUCQkrSkKhfHPJREqXycnlh2o+gen0cME4Q5cqPJJQSO+GsvGpj6MGhmo3Q7Thjz6KBRFHpIS1fGwFrgbbWW8ZXCpz6+AjMKOYJVKgrETnSL/jVw5thXRXbqUm4UErcWrClAWZBQkkFIAKY0MDThPycvsfaj6GQeju1+1fP9bceYbrV3cO0QJU49np10SewANyT3U4X1yw+265YutvOtSVNoXIX2EDMKMQFcxnIypL2pt962YYuOhDhuEhbjmeBAICggcUpg5TyJzJJJ8nI1yxdqPo9TuZaf8AzXiP/bqwPR/aESlbp7lpy7wUZGlbfTbrny5BZdWEBLUAKIHW6xkDITImdKbHN6UIfSwSoOhKMSgAUgqSFYCJ7cxBFL5GTyx9qPoF3+4a2+vbOqXGfRrgLP8AKtMCewgd9AdpsJdaK8MPNzijLEAIIUmPXEHPjx511exHTeoIIMLHBJgHLsIII744V4NxbXpVvuAlbvrDEcJyA9UZZx762XWxjFxy7p/uifjNtSjs/wCTiNpbrcVgQhS1ckpJPkM6atleji8dgqSlkfxnP7qZ9sV1uw2e0ykIYaQ2n+FIHuqyBXly6h/0o744F5AO6u6LNonqDG6R1nVDM9ifqp7B4zR/Ca2SK9xVhKTe7NVtsj5/2YmMa49VJjvV1f8Abio56KbbpLm4uDo2gNp71n3hKD96gRcwW5V9Yk+Cch7cVPXopsejsErOr7i3PAHox/tJ8a9/J9GGMfdv+x48N5yl62Du2WFLZcSnNRSqBzyNULlE4SM0kYgeY0/t2GRrRuoV22uElMmSBBBPPCoEBXaIJgZ1xTjZtF0c9tth3BvOkU00lkBSVFMJC0qCpEIMq1HrZZDXOWnYOxmmgrom0tiZUY4cJVqeMDPsE1fVsknV5QH8KUg+Zn3VPa2CEZiSr6yjKuWXBP8ASBNRob5K1JCxcWLrweKm1oUh0lIUIUppSEIC0xqUqQqRqAtEgZ0rWGwVtPB5LvqmchBPEDPTnOfhXVXWgqJ4GQQSCk8woZpPaM6G3+xlOKKumzOuJtBPmjCSe+apwa4BSOavbFuAtPRrAQgnAZMpBUVxEZ9ZSvOmK2xh3B0Lyih1AeIbVDaSnEVTGZCSk4RnBpls93kpViU64o8hCB/pGIeCqLpyEDIDhQo3yDlQn7R2eUFSVAYoMTmlY4KB0KTln+NJuybRxdwsvMEIUDIICUYsoMDJWQ4d9dZurAKSUhRQCSqBBEnVQSoEJUTqUwTxNCLfdPCAFXDionMpTiMmddPZS0NBqQM2RsxKUkNNhKRmrCnwEnUqnIDU6CmfczH8nKHWy24lbxwKjNCnCsLyJH0wDyI4TUljYoaEJknmoyfgPACpLq2S4kpWnEDI8xBgjMZEjLnRo23DUIm9Gwby4vVQwENlwAOtpbT82SQpSnAAsqwxkqcxkIqxYbuXjFy0lp5ItmeqBjUMSMSlHE0BhLhxHPQmD2U3/J3RAS6YGgWgKgcpGEnxJNaFkpBWtwgJ1gYE+YlU9x9k0tMh2iZJ68jRKVA/zKKTHgEmf5hSRvAu7fcUGOtgkGT9U+qBBo8dqvOqw2zeIA5nIJGfEqy7Y1qKy3OuQbhS3Gx05VhyUqJzg9WCJkwKraKoXJ5uftU3lm405ktsltXZiB9mVaXm7yHzhdSlQkGDqhWsA5GNexQit9gbuXlil0Qh3pC2VYTCjhxSYcjnwJoxaOoflJlKxkQZSocYIOY7jQ1qWwk6EK/2C6jaNultp5FuypvAtAJCRiK1FKySkAkmZPhoC2bE3MZauVXIddWVFZhZThBVqSoAcCdaur2Or7VfHUAnzy91TsWOHVS19itPupAB8ZqdMmVqQrbQ2S4+u8XBZCy2bdZgYxgLauPVPqETE+2lBG6roC23Vx1gqADMgKEEKGR62ldfUJ1GXGhd1u+0vMFbZ/gOX3VApHgKvT6J1HNdzWEl4tv25cUoAStEhEQB62QTGLPu7j0nbN2vprNLLJWLd1LjoRhSEJwKaAEkDEEqUQkchUbG7qQQS88qDMSlI/0JBjxos02lIhIAHZ7++lpt7j1F+9UxcNrcQy08+G1hAWhJdGUFErGJM94GYrlvo/3JdeuejuGrlptCVKKgkoAVpGJxJ17M+NPl5s9p2CtIJGigSFCNIUM61RZuDIXVyANAXZjsBUCQPGjQ1wGpEOydyrfZC1XPTuOqKVIZaKUhSydE5euZjgANTVTYzTyLNtp0Bt9CCiCQUK1wwRI0gEa5GJFFmrVKVFealnIrWoqWco9ZRJ8udSrAOREg8DpQo+w1HLVbl3bqlqcIQuSQVqBxnsKScu3uonuRsFcqK2Fl4E4lOJ9U6jCTkRmZImY1p3TslCiACpM8lGB4GQPCme0s0oSEgZD29prLLNx2NccVLd8EGyrYttpSBBiVHiTxq2hrOdamCK2KgK5Gm+ToutkQ4OVV0r6+Gs2htAJwo4rIHtrRP7yeVS6NIp1bLM5lPKoQ4OdU038PYD9M/hUV69CyKhzLUHwcN3jcKG0t8QEjx9Yj7011Rxz5Ky0wnVppDf8AUEgE+cnxrnOyGflG1Lds6dKFq7QiXCPEIPnTn6QEvoQpxpClE5dUFREnWB2V9F1bXcaXC2/Y8PAvoTfncE7T2zcpVONZ45HQeHCoU7ef4uODvJqjZ3o6JOLEVlJSvGOOKZE8cgPOvQ8jCROpBk6iJ0PAZ59w5VyWb0Ef8afGXSrB0468q9G239A+qhXypGECRkSZyxaARPIR7+dYq5SUgZZAiREnMmTzOcdwFFioKp2/ccHlZawP7Vn7QXH2yvL+1CXH0nkMgMuMACe8xmedb/KUYsUJ1nDHU5xHKiwoKDeC5ielVHPDl5xXn7Q3MSXVRzw5ecUKauUJB48IIkZgie8cKwXSYI1BjUaccqLCg5b71PJUApwaicQAognexwn1EEfrtpe2Zshq5WQtYTAn1VqMz/4YPdnlmKYG932k5B3/APS+f/Liiwo9f3kdVoAkdgj260PO37g/8xfmfjRNWzmkCVPhI4lVu/HmUimvdvZ9sLdJCm1AqJCsJSSQSD64mM4zpNjo58rb1x9qvzNEdgMu3iyhalhpEKcVmCqcghJ5nOTwAOhINdBatWgAMTZGY0IJBz4a5frhXqWxggKSSk558CIBzFS5DoAX7xbR0VukIw5FSQMuxPAcc9SaRtvbPulqBHTzMnqklWYMyrOfMRXS3rtq2twtQK3FmEpHrFXIGOHPh70Hbe1Lx1c/MonQFIUT/W5nPjSSbGWt3dpvswlRWBxSsHCf6FCPdTRtGzTcthxs9G8jJKhnhOoBk9ZpWYg6ZxnBpR3f3mWhYTcpSW1dXGn1ROXWQcsPdprnpXQvkaWgrCclgQOWYMTx/vQ9hHKr3blzjV0iXEmYIzgHTjUH+NucVKFdVtnG8wVoyWCJngcxmOIkeFe4Lec1tkQR6ucEaaa9vYKakFHOdjbdWFT0hjlNW17xvE5R5D8Km3m2VbG6J6eFFDZhDWIE6cHU5wBlH9o2diIiQ892f9m+LtUmKiBzbr5BkxkeAqi9ty4H0lUXVsduDicfM/8AgDLydoHt5xtDaUokniFDCqQoiSJMZcM6Gx0R/tBcnRSvOvP8eufrq8xQ1V0JwjDkTnMQI4c9PbXny4H6uQzM568BRYUE/wDH7n66vMfGvTt65icaoy+kPjQoXomeqBI7zzyjIVYs3MeFAErUopSkEEqJICQZGRz55UWFHQPRr0r3SPOqUUpIQiTInVR8BA8TTqm4BzqlsXZotrdtoRKR1iOKjmo+c0B27tjoVyJjiPx764MsrlZ6WDDcaGpy5HOqVxfRS2d4UkSD40OvNv8AI1nuarGkXNv7bwuNqJyQtJPdOfspiZvAetOWorlm2NohUyfOodnb69EA2SVJGQUM47DzFNY21sVKcdkzojVzN02Z+lHsIoxdJ6xrnFlvECtCwQcKkq1jQ8jXQbq5kyNCAazlBodpy29HJvRrctJv3XHVhOFpYRI1UVISY/pKq6pavpcEtqxRnl8K4ElJD3V1Jy8aeNytvOsPthycKlATyJMCvcyJ65X7PBjwjoy3Iqq5tJoEguIkfxCp9sNqJPR5EEkZx7aSrnZLjmLFbPpWD1Skt4COZOOZ14cvDMaGpy/YIzW2ewkfjXOt+9k4VdO0mE5BaUaDgFgDhoDHYedEHtjPNjEWnAOMgHLwnsqL5Y7kAoRoNKTZSQkC4PNX41J8rPHFHZ/0povNmJKgp1YzIJwqQDE5xMZ0Xb2fsOOuu6SfqyhR80AjzpWMQkXh4hXHT8cq6NuJu8yLYXFylJU6rqJciEoEwcJ1J1nlh0zmJq32GPVXdeGD8U0ZZtrK4SCk37iUdUGW4TxwzhicwfEUCLzCbVsygMIPNISD5ipTtJn7Zv74+NCnN3rTgzeeLjUe6qjGxmwIVYqWZV1lPQYJyBwwJA5ATVWKhlYuUOZIWlfYkg+6sDCR9FPkKXbfZLibtl+3ZNs2iOkSXQpKoJkhMlWIggZkDLzZFrkk0chweYRyHlXgWpJKmyEr7R1T2KAIke3lFYVVqVUUKzU3bT5Sl75h4TAUqUkqyOBZhLgMDkvLMCqW192bheEfNqCcUSVJOenDQaj8aiub8rlLbaVp0KlH5sxkQMiVx2AiqS3ehACuibnRKX3WvuhCwD5VDaXkvdlqy3KcH75xAQAZwycu0qAA9tGLvaJwJat1AwAkvaoQAIlJ/wCY7GkdUHMkxhIqzW0tQStEOE9XpFdICeSVrnM8AYJq86TOetCVhdAzam027dMJTnGQOZ71K1pbVvs5MBCO7DP41d3s2ctx1lQJDRMOlIkpHAwMyJyMVXnZiEwp5E9qDOihx/qpt0CVlcb5uahDc88J+NenfR76qPI/GtHrnZ5JIebznII/m/Mrtz7qgD1jn85M5H5vX1vzH71LUPSXHN7XREoRn3/GljevbCnykkAESMvx9tNFq/syfnVqjQwyT9aeA4rP3jUO2do7JVGAOHLgkpOfX1y1KyfGjUFCEHT+hrUiFk8PCMq6Nb7H2eUgl2Cc4Cm4HZJzNSN7G2dxdUD/ADN/lqdSHQk7L2PcPuBtDZkxmoQlI5ns45Cuxbm7uWzEJQnEtqCtwgYlKI4nUc4GgiltrZVgn1X3QTycbHuRTxZ2qbVhKETGZJUZUScySeJ4eAqMk6jsa4cbnIt7UuYHdSBvQ8FHPWi+0NtYpg5e3upS2vclcma4+WerGOhUALlxYMJUY5VTublehUfOp7xzDJNB3HiSa6IRs5ssqNXnCTOtbMwTnWhqfZ6JWkcyBW0VbpHLJ0rJ8RiOFdd3Iu1O2TKliSAUTOoSopB9lcfIgkHUSPwrtHoxSU7PZ62pcV3S4rKo6iNKvuGCTcrXo41stIU+T9UE+Jy/E10DdTYS1OIdcSUtoIUMQgrIzAAPCYk6RTkxattjC02htI0CUgAeVbk12SlqdnEtlRVv79LYKlZ9g1/6f2oP+1zc/u1HuiitxYJWqSe8VQc3fTilJSOwg/gRUj2Iv2iS5A6NSc9TH6ilfeLZyEq6ZCAFzKoHrdpHPtprXaJQYUE98UOuUJWtWXVpDQru7WbJ0A/pqqq/bnh5URu9lIk0Kc2YmdTRuMu7P2kgrSBqSAMu2uh321W7dCGUtklAkxAEkA+epPfSBu/spHTtanrp94rqFxZIUSpSM1EnUEa5fRoEwGN5k/Yufrwr1G8iSY6JY8RRT5EzHqq80/kqA7OaxpUAYBBIJBnsySIpiLy24CVTIUAR+udRzUlw+VHkBkAKrk0ADNrbRUJSj1hx4R8fh25CrS9cuFBtTiikTjhWHq6FIIzz0McCaK3tssKLjYSo64VZg94Oo7KC7JtFtuJCmejT0bgUszClYkKTiJUQnIFMiBUyuilRUPpFw3HQllCGEKUiSDiThkZAZJzERFKe9W0HLm5UogCQlISCSMpgSdSSSfGmve6xZLDzi2k9LGSwkBUjST4R7KUdh7NXcKwBQBMqk8IjPnxFZpLkt2dCRYBltFst1txxDaQoSJIIkEJ1wxx4jOqiNvXLbykKdWpCIhROeGMsU6kDLmYoUzu/c/K+ncdRhxBRXJxECBpGsADXLtqQWlxcLcc6OWyYbUICVJBIBGIyREZ6HhTjyJnQTaBTPSaKHrA5T4cCOVKW8+8Yt4SBKjz0o9Z3Sm7cNEgqgBUAACIyECl7amz3RcM3TOa2plPOUlMgnLEJOtaMhA5veq5In5OY59GqNCde4TW/7SXEwWDPLArnh9+VW9obaujhCGHI44sMjNP1TB1WfAVSuNpXhSJZWSMog8lq15YiB4mptlUjX9qHonosv5Vcp92dA9vuquCFFohQyySQTnEdudGXLy7P/wAO5Hdwn4T5iqVxti4ZGJxlSDwKgYnCPxny7aVsaFhTqgYJIjgco46HvnxrZNwfrHzp33c37AW4m4ILcQgBM8eMnlVs7Y2Uc+jM96h7OkpXQ6Avo0sTc3zKSTgRLq+RCMwPFWEedde3guOqRQjcP5MpDr9u3hGTcyozkFEDEo/w6Vrt+6zImuTNK5Ueh0cKWpihtlZxSkkHsoHdXa+fmKNbQWKX9qXAGmtKC8HRkfkG3DpUc6qk51ItVaOtFKilWoj2ieFdCRwyds9Q3NWdnJhwdlasiBRPYexX7kLLDalrEBMaTImVHIZTrWmKSU03xZllTcGkVdppheLgoT+v1xrr3o6tnW7FpLqVJPWUkTBwqUVCRzzNRbmej4MYHrrC4+nNKRmhB55+srt4cKdajrc8ZZPo4e4dPjcYfVyAjzPl+NapVw55jwEmvVk5+NeznPEfiIroOQAbS2m+Tht04iBJAEnvPZQ1O17z6ScOZGieGfOmK42SwpRUpAxEQSFKSSORwkSKrr3ettOiB/qV+apdlJoBK24oyHRPaI/tIyrzY118oc6JpMqIUespAGQ54qrbX3dSnEWiUfwkYhz1VmKG2duyWyVJ6wyMnjRuMaH91nvpO2qP53/giqTm6aJ61/ZJ/wDzT7IFLr9u1wSfvH41XSyj6vvo3GONjsS2aWF/4laykzlKvYDRa/200c/8QbyAACLRw+3EaVN37Jta4wJk5CQDrlOfKnG53atWyUBhvKM1AEnLUk0UxWKC98FAx8pb7w3+BTRLYu8xdOAFToyJcwBCRI0nEcWc8AaLp2FbDRhvwSKg2rcJZbOBABiEhIAAPA93GnQBRpClCQCe4Vv8lc+ov7p+Fcxu94bkK/frI5BRgUWubK5cICVOk98nxg60nKhaR1No5xbX90/CtF2i9ChXkaUP2M2gR6rgy1VI95qF3dK+HBfhn+Jpa0PSHrvd1yClDZUgiC2tBIjkDBgdhB7Iqrs7ZLzSShm2gTMBZKZ55iR5UvO7GukqzUYy1/uKvsbt3y0hSElaTxSAR7FHOk6GrC6tkOKM3Hq/ZoCgk9i1qgqT2ACeM6VbVJIGXYMh4eVLT27W0B/yHPBCvwqsvYd6NWHPuq+FNNA7YzqUOY8xWNnF6pBjgCPdNc7RfKPD2/2o1ultdKLhvH1ZUADOQJ0p2TRFvdt11t3omyUwM4GZmhbO2rniXPGR26U+b5bvsOPpd9UhMqzABgSRJEDMZd8caAL29ap6pZUcjosZ4jiPDiQO6pbotKwY3tJ8jNa+WvZPuqC9fU4nCtZVPAmir28ttmBbKGKZlzPrAA6AagD9Gqju2rfgwmTnmozPq+cAUavsGn7gFKV/ZJPgOcc69QhZEhlMdw/E0bb28wjMWzZjIAqPDnB0Bpo2TvVam3QkvFiJHRtBQCesdOqrv8aVv0Ol7CHo0vQmwUggJUl1ZUkdsQfL3VBtm8BJqsdu2YMi5eV3qUfYW4qC3YRdOhDDwKlTAKDkNSTmMh3Vy5IPU2d2DNGMdIIvnToJJOQAEk9gAzJq9sX0bXNwcdwehb4DVw+GifGT2V0Pd3d23tut6zsZrUM/AHQd1HenFRrpbGs3q8CfYejWzbA+a6Q83CVew9X2UQO41ooyq3bJ5lA+FMCV1uCajW35J48IBM7l2QMm2aMc0D3RR23YQ2kJQlKUjQJAAHgKxIisKqTm1yS1ZupU15hqILrfFUuVhVC+fdWrkwY1ND17xWwMdKmvP2ktvtR5H4V7B5YG2rZ3KnCejeViSTKVAJCuRGKcMToNY4TQxdhcpzU2/hGsYifIGms7zW32o8j8Kie3jtlDCHZJyyHxIpUOwD/j1kQEdJdkjKMDcjPQ8fZwrV1rZ+pN+mdfmUx7K22yyFjtBxA9tUntpDCkKIkClQza4b2ZhMO3mKMsTRA8YFDRaWqiIuXWxxlha58sx7fCvLi/RzFVxeIn1hRQxg3fZbbdSWLrplZQDbPjM9UZYeZHGiT27NypZKrgZkmSVa+VRbiuNhwuKIwNgKURyGtGRvLbKPrnxSaKJbM3asHLZwlxSXBgEEExJJlBSrsjPt7KnvLNLiSlXEnPl3VbABAIMgiQZ1BqG7fQ3GNQTPj7BVCFZG5AxZvSnsTB85I5VfatdoIJ6G5YbkzKWc/AkyB2URVtW3+2B/pNR3G12AJDoUeQB/Gk0mO2UHmdqLPXvkK5S2r3BUVHd7W2ratEouGlwfVLRHkSo1XIuLx9Sbc4EIyKjMDkCRqo6xwnhlVxjcu7WYXct+KVR+u+pqJVsTto76X7i5eKgDqEtwPOD7Kltt9HwIClf5ef+ynJG5TigIcRmoJ04njMxHbPEVtabspASorT1gFDqmSDx17/ACpUgAWztvXT3VbQ4s8gzA+8oJSPE0w/Jb1CUlxSElUwlIKj4lMCe6e+jmzUFkJ6iVY+qkyQkKxJTnlnmocvgv7V2c++Q58oICkLWlKW4wpSnER6+pGXaaVRC2Czsc/SRbE//ax/5lVbvdlCloUsBIGE4W0YEqgzJkq7soyre/3TuQ2VoeC1ASEQRiymAudSM8wK23Q3gacYcafBC28xJ6wg568OzuqlXgW5rvpcuKYWpOuUxyn3Vz5N4rs8q6O/tFrOMRHaB8aCv2NkonE3HdKfYlQoasELLCwrU1Y6FPOmMbBsgkKAgHTrr+NaO2NmBp/qV8aKGJ1wopURwrUKNWrl5KVHDmJyNRru54UhmjaCeArovonQlp8uECejUmY5kH8K5w29nTjuptLCkxRKNpoE6aZ197aaY0mqiLoc9cx+IpOudvdC2kuEHFMAetHOKGnfME5EJ/mPwBrilinw0ehHNCrTOlIfPjw+FWkODLPXOkfYe9zSlBJWnERlChBPLvq8veMJVByj3VzuEo8mialwN3SDnXhcFLLm30njwqRraoIkGpbY9KDq3c626QUKaupMk5VbRcojU0UNpHE7xjpFgMziMxnAMZnWKitmnSoIOEEzEqAmBOpyoq3dpUAkJzCVSsDqzxJ8x7K9U7jhITmhvNYGRjIkydcx7K9izyKB7AUpQTlJmJMaCTmakaaKiAMMqmJMaZ8amLxUAEo/dtypQ0OHVRk65j2CvGblbgjo8IQgyocY4qzOckCi2KkXbS+yCF68DOUDmTxqpdFpxQyKSdJMDz4V6i5KwlISISgyoRwzJMnXOPKvOmKgEhIhCFSqQMhKiTOpz91FsYO+QIUqCcMzrplnrwrVjZ7ZIHOdSY8csqul8rCUhIhtCpVkNJVJ5nP8K8aulLAEJwtoUCqQDAJVwGZJP4UWwJ7S9wtKZQnBjglROUJlWHTUmP0aHp2otJ9UGrKLsqAHVwoQRJgaZ6AZkk1f2KbZWThTixCMS1pyPAYEKETnmRQmxUao2opzDiJT1QInwrW8vQEESpRIMAZ013uykdUC2DwCRBD7pSBqAFKwiOOWWdU3XrRk/PspYiD1lPnFnwKXIyymaoSL/wDw3WmEqeVigTAAE9muVRP+j0hJPTO5fye/DTxd74MhSsC0qAnSJy7Tl2Voreto5YkkSMpHP+1RbGV9h2rSGEIQMISIPMnUqUfpKJk68TXM9o+lC8becSOhAQtaUkNDgSnUkzkOOtdYRs0M5AyNQeBGo0n8K5+9u08CvHs1p1Klk4hcRJgwowuQDOIjsOnAKF9n0j3pSFJW2kgkfuk9iuI51r+3l5EB1AEEZNN5AiPq8pq3dbi3a8xboa66gUhwHONJkn6KvKq59Ht3BOFuOfSJg5TIOkRBpbAaI33vFCRcJS4FSmUtjGqPonBkqABnloJmAYnN9ryepckiAJLLSToZEQcsyNePCrJ9Hl0IBS3nChK+ByxDLThl41jvo9uxJIaEHCZXkDiwcucDLmOdGwDNuPfrftS44qVpeUicITkENLHqADLGdROdXtpbjW9wj5QGz0qlKCilakiITGSDGnGqu52w3bZlxt3BJcKxgVIgoSkzI5JFFXtthtJtwYJIdmYhMRHjBNT52AB/sUkJySqO1Sj3Zz2Uob9bFXbKbLeIBUyCZzEc/wBaU9O7wKj6R7gSOI17uVLm8u2nSUFKVmJB+axnnopJiqV2GwoN3L0ALEgd1b3DpKSAkzTEwu6cTKUlI5uobRJ7E4MXsrx22vIycbnw/JVbi2FNuzKh1gRmNOWhy1q7fbMQ2tKMMT9KdORIre+27cNYkOFSVDhkAruMZitd4NqJcUCFDIc/0aljKfQjEAYHAq1jtgVtbvKSYCsAg5jmOztqoLsAYRGpPCcxGvKtU3IgJyAknhOccfCmBduLhTqpWszhyOugyEcJ/GqwEkzkIJBHPl41oLgYQmRAnlxic/CtumGFIxJhMxmOOefOgDUNSTmU5EgjPPl/ep/lr/2qstCTPhnVcvDCESIEx46516XOqE5QAQB7aTSfI1Jrgmc2u+dXFdkRUltvFcIyDp8QD+FVCqQBwAgV4pJIiD5Gloj6H3Jexp2LvpcKcDSlCCMiBnPnU116Qn2VFBQDGhnh5UvbBs1F4LIISgEkkZaQBn4+VT7SZBcJpdqD8DWWfs6SjcSzEwlwTqOlXB9te/sPaxEO9vzqvjWVlb0jC2a/sJZxGBz/ADV/GvE7hWWgQ5H/ANVfxrKykM3TuPZgRgX/AJq/zVr+w1l9kr/Nc/NWVlFAefsJZadEr/Nc/N314NwrH7JX+av81ZWUAbN7j2I/5J8XHPz1O3ujZgg/J0mNMRUoeKVKIPiKyspCC6lTrUbiBoRPfXtZVAaYByHkKiubdK0lKkgg5ZisrKARmzdr3DKeicbLzaY6NSFhLiRBkKC4BGmh51eVvFiTBtHciSJcbkHnIPdWVlTpRVmx3kVmRbrSVKxE9I2M4PIVG7t0nFFsRiJJ+dSATpMBPKsrKWlAQP7bWrW3Ej1T0uYEzGSc858zXlxt91QILAIJBI6XKQSQR1MjWVlGlBZRuNrPx1GUA/xOEjQ5erzIPh20tWuwnV3BuLpxKhOLo0TCiNAomOqOXGIrKymooYafdJJJqBSqyspiNFLqJS6ysoAjMHlWAp5J8hWVlAHso5DyFZjHZ7KyspDPVOp7K1U4OYrKykBEtY51EXe2srKoRoXe2vC8OdZWUAV7q4SBKiAKVb3a/XOHSsrKBn//2Q==
+                    " alt="Imgte">
+                </div>
+                <h2>Como Utilizar una terraja de roscar</h2>
+                <span>Mejores formas de uso</span>
+                <ul class="ctn-tag">
+                    <li>Manual</li>
+                </ul>
+                <a href="https://www.youtube.com/watch?v=lPUw8gX6AsU&ab_channel=Cienciabit%3ACienciayTecnolog%C3%ADa."><button>Ver Video</button></a>
+
+            </div>
+            <div class="post" data-category="VUE">
+
+                <div class="ctn-img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Gramil.jpg/220px-Gramil.jpg" alt="Imggra">
+                </div>
+                <h2>Como Utilizar un Gramil</h2>
+                <span>Mejores formas de uso</span>
+                <ul class="ctn-tag">
+                    <li>Manual</li>
+                    <li>Medicion</li>
+                </ul>
+                <a href="https://www.youtube.com/watch?v=1dvnA2GnEmU&ab_channel=JoglyS%C3%BA"><button>Ver Video</button></a>
+
+            </div>
+
+            <div class="post" data-category="VUE">
+
+                <div class="ctn-img">
+                    <img src="https://m.media-amazon.com/images/I/71G94-FlOPL._AC_SX355_.jpg" alt="">
+                </div>
+                <h2>Como Utilizar un Tiralineas</h2>
+                <span>Mejores formas de uso</span>
+                <ul class="ctn-tag">
+                    <li>Manual</li>
+                    <li>Medicion</li>
+                </ul>
+                <a href="https://www.youtube.com/watch?v=NOaG6De0LTo&ab_channel=EspacioseIdeasM%C3%A9xico-SikaMexicana"><button>Ver Video</button></a>
+
+            </div>
+
+            <div class="post" data-category="CSS">
+
+                <div class="ctn-img">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbzuM2dP-jspwXE7Z3n0Bt37-pWH9Hz6S-qg&usqp=CAU" alt="Imgmul">
+                </div>
+                <h2>Como Utilizar un Multimetro automotriz</h2>
+                <span>Mejores formas de uso</span>
+                <ul class="ctn-tag">
+                    <li>Mecanica</li>
+                </ul>
+                <a href="https://www.youtube.com/watch?v=CFBn2mOYu-o&ab_channel=Andr%C3%A9sOpenauto"><button>Ver Video</button></a>
+
+            </div>
+
+            <div class="post" data-category="JS">
+
+                <div class="ctn-img">
+                    <img src="https://upick-co.s3.amazonaws.com/uploads/product/photo/45917/86-820.jpg" alt="Imgll">
+                </div>
+                <h2>Como Utilizar una Llave de boca fija</h2>
+                <span>Mejores formas de uso</span>
+                <ul class="ctn-tag">
+                    <li>Manual</li>
+                    <li>Montaje</li>
+                </ul>
+                <a href="https://www.youtube.com/watch?v=ePcyTABAMp8&ab_channel=TOPSMART"><button>Ver Video</button></a>
+
+            </div>
+
+            <div class="post" data-category="PHP">
+
+                <div class="ctn-img">
+                    <img src="https://www.csunitec.com/sites/default/files/styles/340x340/public/ns-ex1202_1_1.jpg?itok=Qr8Wt1fy" alt="Imghac">
+                </div>
+                <h2>Como Utilizar una Hacha corta</h2>
+                <span>Mejores formas de uso</span>
+                <ul class="ctn-tag">
+                    <li>Manual</li>
+                    <li>Golpeo</li>
+                </ul>
+                <a href="https://www.youtube.com/watch?v=IwAGQrGDVqs&ab_channel=TheOutdoors"><button>Ver Video</button></a>
+
+            </div>
+            <div class="post" data-category="HTML">
+
+                <div class="ctn-img">
+                    <img src="https://cdn10.totalcode.net/metropolis/product-zoom/es/corta-frio-6-stanley-1.webp" alt="Imgcort">
+                </div>
+                <h2>Como Utilizar un cortafrio</h2>
+                <span>Mejores formas de uso</span>
+                <ul class="ctn-tag">
+                    <li>Manual</li>
+                </ul>
+                <a href="https://www.youtube.com/watch?v=ZIzyPpOH_wM&ab_channel=BISUTERAPIASONIAGONZALEZ"><button>Ver video</button></a>
+
+            </div>
+
+            <div class="post" data-category="CSS HTML">
+
+                <div class="ctn-img">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXcYWLCq-xy3PoT_CRno3dUybDErpil38giA&usqp=CAU" alt="imgtorn">
+                </div>
+                <h2>Como Utilizar un tornillo de banco </h2>
+                <span>Mejores formas de uso</span>
+                <ul class="ctn-tag">
+                    <li>Manual</li>
+                    <li>Mecanica</li>
+                </ul>
+                <a href="https://www.youtube.com/watch?v=Rn3eK3WAWCQ&ab_channel=LuisCarlosGal%C3%A1n"><button>Ver Video</button></a>
+
+            </div>
+            <div class="post" data-category="VUE">
+
+                <div class="ctn-img">
+                    <img src="https://4.bp.blogspot.com/-bNAVXOXvUjU/Vkx-Lg7MK3I/AAAAAAAAxjc/FGBE1p6lwV0/s1600/puntasDeTrazar.jpg" alt="Imgpunt">
+                </div>
+                <h2>Como Utilizar una puntas de trazar</h2>
+                <span>Mejores formas de uso</span>
+                <ul class="ctn-tag">
+                    <li>Manual</li>
+                    <li>Trazo</li>
+                </ul>
+                <a href="https://www.youtube.com/watch?v=3Xq7iDJnIXg&ab_channel=BrazilWelds-ElCanaldelaSoldadura."><button>Ver Video</button></a>
+
+            </div>
+            <div class="post" data-category="HTML">
+
+                <div class="ctn-img">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_691195-MCO31534394566_072019-V.jpg" alt="Imgllavef">
+                </div>
+                <h2>Como Utilizar una llave francesa</h2>
+                <span>Mejores formas de uso</span>
+                <ul class="ctn-tag">
+                    <li>Manual</li>
+                </ul>
+                <a href="https://www.youtube.com/watch?v=IGxGxrF69hE&ab_channel=StanleyHerramientasManualesBolivia"><button>Ver Video</button></a>
+
+            </div>
+            <div class="post" data-category="JS">
+
+                <div class="ctn-img">
+                    <img src="https://www.ayj.com.co/wp-content/uploads/2020/09/SIN-FIN.fw_.png" alt="Imgsierr">
+                </div>
+                <h2>Como Utilizar una sierra sin fin </h2>
+                <span>Mejores formas de uso</span>
+                <ul class="ctn-tag">
+                    <li>Manual</li>
+                    <li>Montaje </li>
+                </ul>
+                <a href="https://www.youtube.com/watch?v=pampJY0X8hU&ab_channel=SantaMisaCosmovision"><button>Ver Video</button></a>
+
+            </div>
+            <div class="post" data-category="NODEJS">
+
+                <div class="ctn-img">
+                    <img src="https://tiendapapel.pochteca.com.mx/media/mageplaza/blog/post/c/a/calibrador-pie-de-rey.jpg" alt="Imgcalib">
+                </div>
+                <h2>Como Utilizar un Calibre o pie de rey</h2>
+                <span>Mejores formas de uso</span>
+                <ul class="ctn-tag">
+                    <li>Manual</li>
+                    <li>Medicion</li>
+                </ul>
+                <a href="https://www.youtube.com/watch?v=nyRE93zvqVM&ab_channel=BarquitodeVapor"><button>Ver Video</button></a>
+
+            </div>
+            <div class="post" data-category="NODEJS">
+
+                <div class="ctn-img">
+                    <img src="data:image/jpeg;base64,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" alt="Imgllavall">
+                </div>
+                <h2>Como Utilizar las llaves de allen </h2>
+                <span>Mejores formas de uso</span>
+                <ul class="ctn-tag">
+                    <li>Manual</li>
+                    <li>Union</li>
+                </ul>
+                <a href="https://www.youtube.com/watch?v=nt8AAnhr3pw&ab_channel=AntonioGB"><button>Ver Video</button></a>
+
+            </div>
+            <div class="post" data-category="PHP">
+
+                <div class="ctn-img">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxIHEhIQEhMSEBESFRATFRAVDxAXFxAYFRUWGBQXHhUYHSggGRslHRMYLTIhJSkrLi4uFx81ODMsNygtLisBCgoKDg0OGRAQGzcmHSUtKy03MCsrLSs3NystLS0tLS83Ly0tLS0tOC8rLS0tNTItLS0tLS0tLSstLS0tLS8tL//AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABwEDBAUGAgj/xAA5EAACAQIDBgEKBQUAAwAAAAAAAQIDEQQFIQYSMUFRYRMHFCIyQnGRobHwUoHB0eEVIzNi8VNywv/EABkBAQEBAQEBAAAAAAAAAAAAAAAEAwUBAv/EACMRAQADAAICAgIDAQAAAAAAAAABAgMREjFhISIEQUJx0RP/2gAMAwEAAhEDEQA/AJxAAAAAAAAMD+tYbx/NfGp+cWT8HfW9Z8NOvbicn5Sdv6ezFOVKm1LEyXv8K/Nr8XRfHv8AO0c8q1a/nG9LxN7e3m2223q7viB9iAjXYDyhLMIRp15apK873ce76x78VzJJjJSV1qnqn1AqAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcP5Stu6eylJwg1LEzXox0fhp+0116L7eb5QdsaeyVByupV5pqnT/APprovn8T5dznNqub1Z1qsnOc22231ApmeYVMzqSqVJOUpNtttttvqzHVoFtMpJ3AzsBmdTAzjUpycZRd1/zmn0Ju8nXlDVeKhP1V69K95Uv9odYdvtwCmZmCxM8JONSnJwnHhJfeq7AfZtCtHERU4NSjJJqSejTLhCnk08oeqo1dL+tT5X5zh+sSaKNWNeKlFqUZK6a4NAewAAAAAAAAAAAAAAAAAAAAAAAAAANRtTn9LZvDzxFV8FaEL61Jcor9+SNnia8cLGVSbUYQTlKT4RS1bPmfyo7aS2lrtRbVCneNOPbq+7/AG6Ac3tZtDX2irSrV5b0nyXqxXJJckjRlxS3tC3JWAoUKsWArFXL8I3LcEZEFcPF3DJxatdNNNNN3R9E+RfGYnG4Wq67coRqKNOTWsnu/wBz6x/O5D2w2zFTaHEQpRVlxnPlCK4y++bR9NZXl9PK6UKFKO7Tprdivq33b1fvD1lAAAAAAAAAAAAAAAAAAAAAAAAAHN7ebSLZrCyqJrxZ3hSX+zWsvclr8OoHAeWfbDV4CjL0Y61pJ+tJcIe5c+/uINxEt9s2Oa4x4mcpNtttttvj1NbJngtpWLknf74FtlLXPRRqx6ij3GNytrAIo2+T5dPHzjCCcpSaiklq23ZL5mqoU5V5KMU5N8EicPIrl2Hws5Oq150v8cWtErek4vnL9L9z5m0RPEvYrMxykDYXZeGzGHUNHWmlKrNc3yiv9Vf6s6QA+ngAAABQCoKACoKACoKACoKACoKACoKACoKFQBFfl7yipiMNRxkLuOHco1I9IVXH07dpRin2l2JULWLw0MZCdKpFTp1IyhOEldTjJWkmujTA+Makrlls7Dyk7E1NjcQ1ZywlVt0K3bj4cnymvmlfqlx7PBQrEJHqKPR7iXVB1NLXueYRJf8AJf5NHj1DGYyMo0rxnTou6lVs7qT5qHb2vdx8HKZJkiy1b0ldy9aX4F27dTqcNQ8HdnF2as1JOzT5ar6nT7VbLf0qTq0k5UJPWPHwm+X/AK9H+Rz+Hi6Gi1g1p/r2930OVt2i328url1mv1SPsptJ/UEqVVpVlonyqW+kux0xDVO9JqSuuDunqmd/sztF53alVdqi0Uv/ACdPz+pV+P8Akdvrbyl3/H6/avh0wALEgUKlAAAAAAAAAAAAAAAAAAAAqAAMPNcso5xSnQr041qU1aUJK6fR9muTWqIA2/8AJHiMjcq+DU8VhdW6aV61Bd0v8kV1WvVcz6LAHxTGNy9Tp3PqTaXyc5dtHJ1KtHw6z41qMnTnLu7ejN6cZJmDsz5KsBs/VVdeLiKkHeHjyg1TfJqMIxTfd3sByXkw8l3qY3Hw6SpYWS+E6ifyh8ehM60AA81Kaqpxkk00001dNPirEebSbPPLHvwu6Mn+dJvk+3R/HvIp4q01VTjJKUWrNPg0Z65xeOJaZ6TSeYRAqfFFym/D4cUbraPInlct+F5UZPR8XBv2X27nM5tmMcup7zTlNtRhTiryqSfqxX7nLtnatuHRrpFq8/pIeze0Pj2pVX6fCM37XRPudOQRkeeSxU3h69PzbFR9NU27qUXwcZc+j7r4SXsztF4lqNZ2lwjN8+z/AHLcd/43Sa4xx3p4dYUHEFaUAAAAAAAAAAAAAAAAAAFQAAAAAAAAAAAAHitSVaLjJKUWrNPg0Rvtdsx5v18PeUqdRW3qM07xevNfB8+ZJZbr0Y4iLjJKUZKzT5memcXj20z0ms+nz/j8F55alUtRq0vTp1YJ/wBlpf5qa9qnL0VOnxTtxum9jkuayxEnQrpUsXSScor1aseVWD5xfyOn2r2beEas5KF96lWj61GXLXr79Gm11REef4fFeeQlOSpVKaj4dWnTtCNOL4qK5Xm7p85W5nPrjPaaeP8AVffrxavzynvZvaDhSqvtGfTs+x1i1IN2ezzz69OdoV6dnKKvapHlVhfVwfyuSJs5n/h2pVX6PCM/w9n2+hRltNZ6X8stcomO9HXAJ3BYlAAAAAAAAAAAAAAAAVAAAAAAAAAAAAAAABaxNCOJi4TSlGSs0yNNrtmPBvFt+HK/h1l61NtWaf5cuDXylAtYrDxxUXCaUoyVmjPTPt/bTO/X+nzPmyeT+jJuFWF50ZRTbhJWWkm/SpSXFP3WurvtNnMfUzDD08ROlKkp7y1Xoya4yi+cXy/g3W1Wy1OlKCrU1WoqalBttcNXFtdea4NfLzmWJrXjKEFWpStTjRXoxhHR6pcJ6WT4Rtzuia1f+kcT8Whv3mk9o+ay6DZ3PvAtTqP+37Mn7HZ9jsE76kVYml4GsXvU3dKXu4p9/wDqOg2az94W1Kq70/Zl+D+BjtNZ6XNcYtHejtgUjJS1WqfPqVLUgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACzisNHFxcJrejLivvmcJmeXzySdnedGeifXs+kl96XJBLOMwsMZBwmt6Mvu/Zmemfb5jy0zv1+J8I58LdklBeJSqXXhJa1Jc5Sm77u6rWtquFrFnMMHLAS3XrF6xl27myx2FqbP1Px05eq2tHb6SRqMTXlWm5yd78ei7e4i3vEx8x9leFZififq3+zefvCWp1Hem/Vl+H+DtoTU0mndOzTXO5FClu94/NG+2c2i8zfhVG3TvpL8Pf3dj7w34+tnzvhz9qu7B5hJTSad09U1zPRciAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWMZhYY2DpzV4v5dGujI/zjKZ5VOz1g/Vl+JdPeSOWMbhIY2DpzV4v5dGnyZjrlF49tctZpPpFrju8P8ApWOity426PqjYZzlc8rnuvWDvuz6/s+xrn6S+9O5zbVms8S6NbRaOXQ5Bnby9qnNt0nwfHcv+nY7aE1NJp3T1TXMi2hVXCStf7ub/I84eWtU6jvRlwl+Bv8AQrw24+J8JNsf3DtQeYSU0mndPVNcz0WpAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGPjsJDHQdOaun8V3Xcj/ADTK55VPdlrF33Z8pL9H2JIMfHYOGOg4TV0/inya7mOuUXj21y1mk+kYVI7y7fQuYXEexPVPn0MrN8snlU92WsX6s+Ul+jMCpT39VxOdMTWXQiYtDpcmzaWVyVOpeVGXqy47n8HYwmqiTTunqmuZGGDxi/xzXovryN7k+ayylqE3vUJcJfgLMdv1PhJrjPmPLtAeac1USkndPVNcz0VpQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGPjsHDHQdOaun8U+q7kd5vlk8pnuvWL9WfKS/ckwxsfgoY+DhNXT584vqu5jtjF49tctZpPpFtSG9quJdwmNt/bn6r+Xcys3yueVz3Jaxfqz5SX38DW1IXOdMTWXQiYtDqMnzWWVNRk9+hLg17Pc7OlVVZKUWmnqmuZF+BxKgtyfqv5d0brLM0lk8lF+nRlr7u679ivHb44nwl2x+eY8u5Baw1eOJipxalF8Gi6WJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGLmOBhmEHTmrp8Hzi+q7keZrls8sn4c+D1hPlJfv2JNMXMsBDMYOnNXT4PnF8mu5jrlF49tctZpPpFGIXh2b0V1rbhczsHX8P0J6x+i7Mv5jk9bATcHCUo+zOMW4yXvXB9mZ+QbNTxbU60XTpx4Ras59rcl9rtDXO/biIXW0r15mW+2RwzoQnLe3qc2tz3Jav4u35G/PNOCppJJJJWSS0SR6OlWvEcOda3aeQAH0+QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH/2Q==
+                    " alt="ImgMzogom">
+                </div>
+                <h2>Como Utilizar un mazo de goma</h2>
+                <span>Mejores formas de uso</span>
+                <ul class="ctn-tag">
+                    <li>Manual</li>
+                    <li>Goldeo</li>
+                </ul>
+                <a href="https://www.youtube.com/watch?v=6gkZLU8LfW0&ab_channel=Siciliano%22Tano%22ILACQUA..."><button>Ver Video</button></a>
+
+            </div>
+
+
+
+
+
+            
+
+        </div>
+
+    </div>
+
+
+    <div class="container-footer">	
+
+        <footer>
+            <div class="logo-footer">
+                <img src="img/logo-magtimus-pro-.png" alt="">
+            </div>
+
+
+        </footer>
+
+    </div>
+
+</div>
+</body>
+</html>

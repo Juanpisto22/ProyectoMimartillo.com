@@ -1,0 +1,29 @@
+{% block content %}
+{% include 'base.html' %}
+<center>
+<div class = "container-fluid">
+    <div class="col-md-4">
+  <center><h3>Algun comentario que tengas sobre algun producto?</h3></center>
+  <center>Depositalo aquí</center>
+  <hr>
+  {% for comentario in comentarios %}
+    <div class="media">
+      <div class="media-body">
+        <h4 class="media-heading">{{ comentario.autor }}<small><i> publicado el {{ comentario.fecha_publicacion }}</i></small></h4>
+        <p>{{ comentario.mensaje }}</p>
+      </div>
+    </div>
+  {% empty %}
+    <p>No hay comentarios todavía.</p>
+  {% endfor %}
+  <hr>
+  <h3>Agregar un comentario</h3>
+  <form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">Publicar comentario</button>
+  </form>
+    </div>
+</div>
+</center>
+{% endblock %}
