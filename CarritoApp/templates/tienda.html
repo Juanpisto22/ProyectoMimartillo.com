@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
@@ -11,13 +10,28 @@
     <!-- Bootstrap -->
     <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
     <!-- Styles -->
-    <link href="{% static 'css/estilos.css' %}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/EstilosTienda.css' %}">
+    
 </head>
 <body>
     <div class="container">
         <div class="row">
             <div class="col-12 align-self-center"><h2 class="display-1"><center>Productos</center></h2></div>
             <center> {% include 'buscador.html' %} </center>
+            {% if messages %}
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        {% for message in messages %}
+                            <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %}" role="alert">
+                                <div class="p-3 mb-2 bg-danger text-white">{{ message }}</div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        
         </div>
         <div class="row">
             <div class="col-8">
@@ -25,16 +39,23 @@
                     <div class="col-12">
                         <div class="row">
                             {% for producto in productos %}
+                            {% if producto.activo %}
                             <div class="col-6">
-                                <div class="card" style="height: 10rem; width: 23rem; margin: 5px 0px;">
+                                <div class="card" style="height: 14rem; width: 23rem; margin: 5px 0px;" id="card-{{ producto.id }}">
                                     <div class="card-body">
-                                        <h5 class="card-title">{{producto.nombre}}</h5>
-                                        <p class="card-text">{{producto.categoria}}</p>
-                                        <p class="card-text">{{producto.precio}}</p>
-                                        <a href="{% url 'Add' producto.id %}" class="btn btn-primary">Agregar al carrito</a>
+                                        <h5><a href="{% url 'descripcion_productos' producto.id %}">{{ producto.nombre }}</a></h5>
+                                        <p class="card-text">Categoría: {{ producto.categoria }}</p>
+                                        <p class="card-text">Precio: ${{ producto.precio }}</p>
+                                        <p class="card-text">Disponible: {{ producto.cantidad }}</p>
+                                        {% if producto.cantidad > 0 %}
+                                            <a href="{% url 'Add' producto.id %}" class="btn btn-primary">Agregar al carrito</a>
+                                        {% else %}
+                                            <button class="btn btn-primary" disabled>No disponible</button>
+                                        {% endif %}
                                     </div>
                                 </div>
                             </div>
+                            {% endif %}
                             {% endfor %}
                         </div>
                     </div>
@@ -48,15 +69,35 @@
     </div>
     <center>
         <div>
-        <h4>Si necesitas poner un comentario da clik aquí</h4>
-    <a href="{% url 'comentarios' %}" >
-    <center><button type="submit" class="btn btn-primary">Agregar un comentario</button></center>
-    </a>
-    </div>
+        <h4>Evalúanos con un comentario</h4>
+        <a href="{% url 'comentarios' %}">
+            <center><button type="submit" class="btn btn-primary">Agregar un comentario</button></center>
+        </a>
+        </div>
     </center>
     <!-- Bootstrap -->
     <script src="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-    {% endblock %}
-    
+    <script>
+        // Guardar la posición de desplazamiento al hacer clic en un enlace
+        document.addEventListener("click", function(e) {
+            if (e.target.tagName === "A") {
+                var scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+                history.pushState({ scrollPosition: scrollPosition }, "");
+            }
+        });
+
+        // Restaurar la posición de desplazamiento al volver o avanzar en el historial del navegador
+        window.addEventListener("popstate", function(e) {
+            if (e.state && e.state.scrollPosition) {
+                window.scrollTo(0, e.state.scrollPosition);
+            }
+        });
+
+        function toggleProducto(id) {
+            const card = document.querySelector(`#card-${id}`); // selecciona la tarjeta con el ID correspondiente
+            card.classList.toggle("hidden"); // agrega o elimina la clase "hidden" en la tarjeta
+          }
+    </script>
 </body>
 </html>
+{% endblock %}

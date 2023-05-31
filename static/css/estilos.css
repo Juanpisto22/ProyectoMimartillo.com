@@ -1,3 +1,28 @@
 .card {
-    background-color: rgb(76, 78, 79);
+    background-color: rgb(173, 188, 196);
   }
+
+.hidden {
+    display: none;
+  }
+
+.a {
+    text-decoration: none;
+  }
+
+.card .list-group .list-group-flush {
+  background-color: rgb(173, 188, 196);
+}
+  
+  
+  /* Estilos CSS para la animación */
+  @keyframes fadeInOut {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  #animated-title {
+    animation: fadeInOut 3s infinite;
+  }
+  

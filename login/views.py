@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.http import HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
+from django.contrib.admin.views.decorators import staff_member_required
 from django.contrib.auth import logout
 from.forms import *
 from django.contrib.auth import authenticate, login
@@ -13,10 +14,20 @@ from django.views.generic import TemplateView
 
 
 # Create your views here.
+# Verificar si el usuario pertenece al grupo de administradores
 def home(request):
-    return render (request, 'home.html')
+    user = request.user
+
+    if user.groups.filter(name='Administradores').exists():
+        return redirect('homeA')
+    else:
+        return render(request, 'home.html')
 
 @login_required
+
+@staff_member_required(login_url='login')
+def homeA(request):
+    return render(request, 'homeA.html')
 
 
 def products(request):
@@ -26,8 +37,7 @@ def exit (request):
     logout(request)
     return redirect('home')
 
-def homeA(request):
-    return render (request, 'homeA.html')
+
 
 
 
@@ -52,10 +62,8 @@ def register(request):
 
     return render (request,'registration/register.html',data )
 
-# Verificar si el usuario pertenece al grupo de administradores
-@user_passes_test(lambda user: user.groups.filter(name='Administradores').exists(), login_url='home')
-def admin_home(request):
-  return render(request, 'templates/homeA.html')
+
+
 
 
 

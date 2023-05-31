@@ -16,7 +16,7 @@ Including another URLconf
 
 from django.urls import path, include
 from.views import*
-from CrudProductos import*
+from CrudProductos.urls import*
 
 urlpatterns = [
     path('',home, name='home'),

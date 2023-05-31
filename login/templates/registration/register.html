@@ -14,20 +14,39 @@
     <div class="card mx-auto" style="width: 30rem;">
         <div class="card-body">
           <h5 class="card-title">Complete todos los campos</h5>
-          <h6 class="card-subtitle mb-2 text-muted">(Posible subtitulo)</h6>
+          <h6 class="card-subtitle mb-2 text-muted">(Si es administrador deve ingresar con las credenciales ya dadas)</h6>
           {{ form | crispy }}
           <a href={% url 'home' %} class="card-link">Inicio</a>
           <a href={% url 'login' %} class="card-link">Iniciar sesion</a>
           <button class="btn btn-sm btn-primary fload end" type="submit" >Registrarse</button>
         </div>
       </div>
-
-    
-    
-
-
-
-
 </form>
+
+
+<script>
+  // Obtener referencias a los campos de contraseña
+  const passwordInput = document.getElementById('id_password1');
+  const confirmPasswordInput = document.getElementById('id_password2');
+
+  // Agregar evento de cambio a los campos de contraseña
+  passwordInput.addEventListener('change', validatePassword);
+  confirmPasswordInput.addEventListener('change', validatePassword);
+
+  function validatePassword() {
+      // Obtener el valor de las contraseñas ingresadas
+      const password = passwordInput.value;
+      const confirmPassword = confirmPasswordInput.value;
+
+      // Verificar si las contraseñas coinciden
+      if (password === confirmPassword) {
+          // Habilitar el botón de registro si las contraseñas coinciden
+          document.getElementById('btn-registrar').disabled = false;
+      } else {
+          // Deshabilitar el botón de registro si las contraseñas no coinciden
+          document.getElementById('btn-registrar').disabled = true;
+      }
+  }
+</script>
 
 {% endblock %}

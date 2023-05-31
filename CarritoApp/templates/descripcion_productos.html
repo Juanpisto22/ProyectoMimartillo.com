@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    
+    </head>
+    <body>
+        {% load static %}
+        
+        <link rel="stylesheet" type="text/css" href="{% static 'css/EstilosTienda.css' %}">
+        {% include 'base.html' %}
+        <h1 style="text-align: center;">Descripción producto</h1>
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title" style="text-align: center;">{{ producto.nombre }}</h4>
+                <div style="margin-bottom: 20px; text-align: center;"> <!-- Agrega un margen inferior y centra el contenido -->
+                    <img class="card-img-top" src="{{producto.link_img}}" alt="Card image cap" alt="Imagen_Carta" style="width: 600px; height: auto;">
+                </div>
+                
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><h6>{{ producto.descripcion }}</h6></li>
+                    <li class="list-group-item"><p class="card-text"><h5>Precio: {{producto.precio}}</h5></p></li>  
+                </ul>
+                <a href="{% url 'Add' producto.id %}" class="btn btn-primary">Agregar al carrito</a>
+            </div> 
+        </div>
+        <script src="" async defer></script>
+    </body>
+</html>
